@@ -1,0 +1,11 @@
+
+{
+  "name": "tuyên",
+  "gender": true,
+  "mark": 7.5,
+  "contact": {
+    "email": "tuyen02@gmail.com",
+    "phone": "0291812"
+  },
+  "subjects": ["web201", "com108"]
+}

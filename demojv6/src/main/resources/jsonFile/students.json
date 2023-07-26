@@ -1,0 +1,32 @@
+[
+  {
+    "name": "tuyên",
+    "gender": true,
+    "mark": 7.5,
+    "contact": {
+      "email": "tuyen02@gmail.com",
+      "phone": "0291812"
+    },
+    "subjects": ["web201", "com108"]
+  },
+  {
+    "name": "huy",
+    "gender": true,
+    "mark": 7.5,
+    "contact": {
+      "email": "huy02@gmail.com",
+      "phone": "0291812"
+    },
+    "subjects": ["web2101", "com1081"]
+  },
+  {
+    "name": "thành",
+    "gender": false,
+    "mark": 6.5,
+    "contact": {
+      "email": "tuyen1102@gmail.com",
+      "phone": "029181112"
+    },
+    "subjects": ["web2101", "com1108"]
+  }
+]
