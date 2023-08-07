@@ -14,7 +14,7 @@ import java.util.List;
 public class Student {
     private String name;
     private Boolean gender;
-    private Double mark =0.0;
+    private Double mark = 0.0;
     private Contact contact;
     private List<String> subjects;
 }

@@ -21,15 +21,15 @@ public class Stream_Map {
     }
 
     private static void demo2(List<Staff> lst) {
-    // thu thập tên nv có lương dưới 100 usd
+        // thu thập tên nv có lương dưới 100 usd
         List<String> names = lst.stream()
-                .filter(n1-> n1.getSalary()>100)
+                .filter(n1 -> n1.getSalary() > 100)
                 .map(n2 -> n2.getName())
                 .collect(Collectors.toList());
 
         names.forEach(System.out::println);
         // tương đương dưới
-        names.forEach(n-> System.out.println(n));
+        names.forEach(n -> System.out.println(n));
     }
 
     private static void demo1(List<Staff> lst) {

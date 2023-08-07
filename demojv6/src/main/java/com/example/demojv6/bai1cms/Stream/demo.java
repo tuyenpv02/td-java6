@@ -6,20 +6,23 @@ public class demo {
 
     }
 
-   public static void m(){
+    public static void m() {
         Shape s = new Shape() {
             @Override
             public void hi() {
                 System.out.println("jj");
             }
         };
-s.hi();
+        s.hi();
     }
 }
 
-abstract class Shape{
-    public void h(){
+abstract class Shape {
+    public void h() {
 
-    };
+    }
+
+    ;
+
     abstract void hi();
 }

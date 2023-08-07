@@ -17,17 +17,17 @@ public class Stream_allMatch_anyMatch_noneMatch {
 //        demo1(lst);
 
         // tất cả nv đều có lương dưới 50 usd
-        if(lst.stream().allMatch(o -> o.getSalary()<50)){
+        if (lst.stream().allMatch(o -> o.getSalary() < 50)) {
             System.out.println(" tất cả dưới 50 usd");
         }
 
         // ít nhất 1 nv  có lương dưới 50 usd
-        if(lst.stream().anyMatch(o -> o.getSalary()<50)){
+        if (lst.stream().anyMatch(o -> o.getSalary() < 50)) {
             System.out.println(" ít nhất dưới 50 usd");
         }
 
         // k 1 nv nào có lương dưới 50 usd
-        if(lst.stream().noneMatch(o -> o.getSalary()<50)){
+        if (lst.stream().noneMatch(o -> o.getSalary() < 50)) {
             System.out.println(" k có nv dưới 50 usd");
         }
     }

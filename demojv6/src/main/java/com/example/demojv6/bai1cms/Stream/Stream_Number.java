@@ -21,19 +21,19 @@ public class Stream_Number {
 
         // số ptử
         long count = lst.stream().count();
-        System.out.println("count "+count);
+        System.out.println("count " + count);
 
         //tổng gtrị các ptử
-        double total = lst.stream().mapToDouble(o->o.getSalary()).sum();
-        System.out.println("total "+total);
+        double total = lst.stream().mapToDouble(o -> o.getSalary()).sum();
+        System.out.println("total " + total);
 
         // ptử có giá trị nhỏ nhất
         List<Staff> lst2 = Arrays.asList();
 
-        double min = lst2.stream().mapToDouble(o->o.getSalary())
+        double min = lst2.stream().mapToDouble(o -> o.getSalary())
                 .min().orElse(0);
         // orElse() nếu có thì trả về, nếu k có thì trả về 0(Optional)
-        System.out.println("min "+min);
+        System.out.println("min " + min);
     }
 
 

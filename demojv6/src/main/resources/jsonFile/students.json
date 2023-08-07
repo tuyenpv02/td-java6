@@ -7,7 +7,10 @@
       "email": "tuyen02@gmail.com",
       "phone": "0291812"
     },
-    "subjects": ["web201", "com108"]
+    "subjects": [
+      "web201",
+      "com108"
+    ]
   },
   {
     "name": "huy",
@@ -17,7 +20,10 @@
       "email": "huy02@gmail.com",
       "phone": "0291812"
     },
-    "subjects": ["web2101", "com1081"]
+    "subjects": [
+      "web2101",
+      "com1081"
+    ]
   },
   {
     "name": "thành",
@@ -27,6 +33,9 @@
       "email": "tuyen1102@gmail.com",
       "phone": "029181112"
     },
-    "subjects": ["web2101", "com1108"]
+    "subjects": [
+      "web2101",
+      "com1108"
+    ]
   }
 ]

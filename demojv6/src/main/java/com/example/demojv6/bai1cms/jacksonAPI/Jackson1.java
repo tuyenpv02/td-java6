@@ -18,15 +18,15 @@ public class Jackson1 {
     //    writeValueAsString(Object): String
     //    writeValue(source, Object)
     //    Source
-        //    Writer/OutputStream/File
+    //    Writer/OutputStream/File
     //    writerWithDefaultPrettyPrinter().writeValueAsString(Object)
 
 
-    public static void main(String[] args)   {
+    public static void main(String[] args) {
 
         try {
             demo2();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -37,17 +37,17 @@ public class Jackson1 {
         ObjectMapper mapper = new ObjectMapper();
         JsonNode students = mapper.readTree(new File(json));
 
-        students.iterator().forEachRemaining(student->{
+        students.iterator().forEachRemaining(student -> {
             System.out.println("\n");
-            System.out.println(">> name: "+ student.get("name").asText());
-            System.out.println(">> mark: "+ student.get("mark").asDouble());
-            System.out.println(">> Gender: "+ student.get("gender").asBoolean());
-            System.out.println(">> Email: "+ student.get("contact").get("email").asText());
+            System.out.println(">> name: " + student.get("name").asText());
+            System.out.println(">> mark: " + student.get("mark").asDouble());
+            System.out.println(">> Gender: " + student.get("gender").asBoolean());
+            System.out.println(">> Email: " + student.get("contact").get("email").asText());
             // tìm đối tượng : findValue
-            System.out.println(">> phone: "+ student.findValue("phone").asText());
+            System.out.println(">> phone: " + student.findValue("phone").asText());
             //đọc dữ liệu từ mảng
-            student.get("subjects").iterator().forEachRemaining(o->{
-                System.out.println(">> subject "+o);
+            student.get("subjects").iterator().forEachRemaining(o -> {
+                System.out.println(">> subject " + o);
             });
         });
     }
@@ -58,15 +58,15 @@ public class Jackson1 {
         ObjectMapper mapper = new ObjectMapper();
         JsonNode student = mapper.readTree(new File(json));
 
-        System.out.println(">> name: "+ student.get("name").asText());
-        System.out.println(">> mark: "+ student.get("mark").asDouble());
-        System.out.println(">> Gender: "+ student.get("gender").asBoolean());
-        System.out.println(">> Email: "+ student.get("contact").get("email").asText());
+        System.out.println(">> name: " + student.get("name").asText());
+        System.out.println(">> mark: " + student.get("mark").asDouble());
+        System.out.println(">> Gender: " + student.get("gender").asBoolean());
+        System.out.println(">> Email: " + student.get("contact").get("email").asText());
         // tìm đối tượng : findValue
-        System.out.println(">> phone: "+ student.findValue("phone").asText());
+        System.out.println(">> phone: " + student.findValue("phone").asText());
         //đọc dữ liệu từ mảng
-        student.get("subjects").iterator().forEachRemaining(o->{
-            System.out.println(">> subject "+o);
+        student.get("subjects").iterator().forEachRemaining(o -> {
+            System.out.println(">> subject " + o);
         });
 
 //        Đọc một node: JsonNode.get(key): JsonNode
